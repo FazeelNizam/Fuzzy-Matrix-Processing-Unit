@@ -50,6 +50,7 @@ The design targets the **Nexys A7-100T FPGA** (XC7A100T-1CSG324C).
 *Below is the Register Transfer Level (RTL) schematic of the FMU top module:*
 
 ![RTL Schematic](https://github.com/FazeelNizam/Fuzzy-Matrix-Processing-Unit/blob/main/sim%20runs%20ss/RTL.png)
+![Implementation](https://github.com/FazeelNizam/Fuzzy-Matrix-Processing-Unit/blob/main/sim%20runs%20ss/Implementation.png)
 
 ## 📊 Performance & Utilization
 
