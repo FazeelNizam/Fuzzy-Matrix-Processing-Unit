@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/OUSL/5th Year/EEX7436/EEX7436 Design Project/DPP/DPP.srcs/sources_1/new/inference_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'inference_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/OUSL/5th Year/EEX7436/EEX7436 Design Project/DPP/DPP.srcs/sim_1/new/tb_inference_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_inference_unit'

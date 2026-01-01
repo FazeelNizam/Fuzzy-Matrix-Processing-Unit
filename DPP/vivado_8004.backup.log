@@ -1,0 +1,901 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov 11 13:04:44 2025
+# Process ID: 8004
+# Current directory: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent728 E:\OUSL\5th Year\EEX7436\EEX7436 DPP 2\DPP\DPP\DPP.xpr
+# Log file: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/vivado.log
+# Journal file: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.xpr}
+WARNING: [Board 49-91] Board repository path '/u/estay/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'E:/OUSL/5th Year/EEX7436/AppData/Roaming/Xilinx/Vivado/Nizam/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'E:/OUSL/5th Year/EEX7436/AppData/Roaming/Xilinx/Vivado/Nizam/AppData/Roaming/Xilinx/Vivado/{C:/Users/Fazeel'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'E:/OUSL/5th Year/EEX7436/AppData/Roaming/Xilinx/Vivado/Nizam/AppData/Roaming/Xilinx/Vivado/Nizam/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store}'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'E:/OUSL/u/estay/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 899.613 ; gain = 286.684
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-10:58:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 942.922 ; gain = 11.102
+close_hw_manager
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FMU
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1438.066 ; gain = 225.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FMU' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:20]
+INFO: [Synth 8-3491] module 'instruction_register' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/instruction_register.vhd:5' bound to instance 'IR' of component 'instruction_register' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'instruction_register' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/instruction_register.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'instruction_register' (1#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/instruction_register.vhd:17]
+INFO: [Synth 8-3491] module 'demux' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/demux.vhd:4' bound to instance 'dmux' of component 'demux' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'demux' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/demux.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'demux' (2#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/demux.vhd:14]
+INFO: [Synth 8-3491] module 'DFlipFlop' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/DFlipFlop.vhd:4' bound to instance 'dff' of component 'dflipflop' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'DFlipFlop' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/DFlipFlop.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'DFlipFlop' (3#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/DFlipFlop.vhd:14]
+INFO: [Synth 8-3491] module 'inference_unit' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/inference_unit.vhd:5' bound to instance 'IU' of component 'inference_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'inference_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/inference_unit.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'inference_unit' (4#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/inference_unit.vhd:14]
+INFO: [Synth 8-3491] module 'reg_a_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:4' bound to instance 'a_register' of component 'reg_a_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'reg_a_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'reg_a_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_fms.vhd:4' bound to instance 'CU' of component 'reg_a_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'reg_a_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_fms.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'reg_a_fsm' (5#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_fms.vhd:15]
+INFO: [Synth 8-3491] module 'reg_a' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/reg_a_stub.vhdl:5' bound to instance 'reg_a_1' of component 'reg_a' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'reg_a' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/reg_a_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'reg_a_top' (6#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:17]
+INFO: [Synth 8-3491] module 'registry_bank_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:4' bound to instance 'registry_bank' of component 'registry_bank_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'registry_bank_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'registry_bank_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_fsm.vhd:4' bound to instance 'CU' of component 'registry_bank_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'registry_bank_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_fsm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'registry_bank_fsm' (7#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_fsm.vhd:15]
+INFO: [Synth 8-3491] module 'register_bank' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/register_bank_stub.vhdl:5' bound to instance 'register_bank_1' of component 'register_bank' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'register_bank' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/register_bank_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'registry_bank_top' (8#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:17]
+INFO: [Synth 8-3491] module 'ram_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:4' bound to instance 'data_memory' of component 'ram_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:289]
+INFO: [Synth 8-638] synthesizing module 'ram_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'ram_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_fsm.vhd:4' bound to instance 'CU' of component 'ram_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'ram_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_fsm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ram_fsm' (9#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_fsm.vhd:15]
+INFO: [Synth 8-3491] module 'ram' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/ram_stub.vhdl:5' bound to instance 'ram_1' of component 'ram' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'ram' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/ram_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'ram_top' (10#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:17]
+INFO: [Synth 8-3491] module 'rom_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:4' bound to instance 'program_memory' of component 'rom_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'rom_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'rom_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_fsm.vhd:4' bound to instance 'CU' of component 'rom_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'rom_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_fsm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'rom_fsm' (11#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_fsm.vhd:15]
+INFO: [Synth 8-3491] module 'rom' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/rom_stub.vhdl:5' bound to instance 'rom_1' of component 'rom' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'rom' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/rom_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'rom_top' (12#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:17]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:6' bound to instance 'CU' of component 'control_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:317]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:57]
+WARNING: [Synth 8-614] signal 'ramdata' is read in the process but is not in the sensitivity list [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:97]
+WARNING: [Synth 8-614] signal 'pulse_edge' is read in the process but is not in the sensitivity list [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:97]
+WARNING: [Synth 8-3848] Net rom_clr in module/entity control_unit does not have driver. [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (13#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:57]
+WARNING: [Synth 8-3848] Net ro_op in module/entity FMU does not have driver. [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'FMU' (14#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:20]
+WARNING: [Synth 8-3331] design control_unit has unconnected port rom_clr
+WARNING: [Synth 8-3331] design control_unit has unconnected port ramdata[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port ramdata[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port ramdata[5]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[31]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[30]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[29]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[28]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1515.848 ; gain = 303.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1539.016 ; gain = 326.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1539.016 ; gain = 326.367
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/reg_a/reg_a.dcp' for cell 'a_register/reg_a_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/register_bank/register_bank.dcp' for cell 'registry_bank/register_bank_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/ram/ram.dcp' for cell 'data_memory/ram_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/rom/rom.dcp' for cell 'program_memory/rom_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1560.570 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 157 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1672.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 1672.395 ; gain = 459.746
+61 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1672.395 ; gain = 728.137
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_FMU' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/ram.mif'
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/data.coe'
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/program.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_FMU_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/ram/ram_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ram_blk_mem_gen_prim_wrapper_init'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_wrapper_init__parameterized0\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_wrapper_init__parameterized1\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_wrapper_init__parameterized2\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_wrapper_init__parameterized3\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_wrapper_init__parameterized4\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_wrapper_init__parameterized5\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_wrapper_init__parameterized6\'
+INFO: [VRFC 10-3107] analyzing entity 'ram_blk_mem_gen_prim_width'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_width__parameterized0\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_width__parameterized1\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_width__parameterized2\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_width__parameterized3\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_width__parameterized4\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_width__parameterized5\'
+INFO: [VRFC 10-3107] analyzing entity '\ram_blk_mem_gen_prim_width__parameterized6\'
+INFO: [VRFC 10-3107] analyzing entity 'ram_blk_mem_gen_generic_cstr'
+INFO: [VRFC 10-3107] analyzing entity 'ram_blk_mem_gen_top'
+INFO: [VRFC 10-3107] analyzing entity 'ram_blk_mem_gen_v8_4_4_synth'
+INFO: [VRFC 10-3107] analyzing entity 'ram_blk_mem_gen_v8_4_4'
+INFO: [VRFC 10-3107] analyzing entity 'ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sim_1/new/tb_FMU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_FMU'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+"xelab -wto fd4e5ae50fec4ebdb77c07f87bc51b92 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_FMU_behav xil_defaultlib.tb_FMU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto fd4e5ae50fec4ebdb77c07f87bc51b92 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_FMU_behav xil_defaultlib.tb_FMU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.instruction_register [instruction_register_default]
+Compiling architecture archi_dmux of entity xil_defaultlib.demux [demux_default]
+Compiling architecture behavioral of entity xil_defaultlib.DFlipFlop [dflipflop_default]
+Compiling architecture arch_inference_unit of entity xil_defaultlib.inference_unit [inference_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_a_fsm [reg_a_fsm_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,rdaddr_colli...]
+Compiling architecture structure of entity xil_defaultlib.reg_a_blk_mem_gen_prim_wrapper_init [reg_a_blk_mem_gen_prim_wrapper_i...]
+Compiling architecture structure of entity xil_defaultlib.reg_a_blk_mem_gen_prim_width [reg_a_blk_mem_gen_prim_width_def...]
+Compiling architecture structure of entity xil_defaultlib.reg_a_blk_mem_gen_generic_cstr [reg_a_blk_mem_gen_generic_cstr_d...]
+Compiling architecture structure of entity xil_defaultlib.reg_a_blk_mem_gen_top [reg_a_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.reg_a_blk_mem_gen_v8_4_4_synth [reg_a_blk_mem_gen_v8_4_4_synth_d...]
+Compiling architecture structure of entity xil_defaultlib.reg_a_blk_mem_gen_v8_4_4 [reg_a_blk_mem_gen_v8_4_4_default]
+Compiling architecture structure of entity xil_defaultlib.reg_a [reg_a_default]
+Compiling architecture arch_reg_a of entity xil_defaultlib.reg_a_top [\reg_a_top(1,4)\]
+Compiling architecture behavioral of entity xil_defaultlib.registry_bank_fsm [registry_bank_fsm_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,dob_reg=1,rd...]
+Compiling architecture structure of entity xil_defaultlib.register_bank_blk_mem_gen_prim_wrapper_init [register_bank_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.register_bank_blk_mem_gen_prim_width [register_bank_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.register_bank_blk_mem_gen_generic_cstr [register_bank_blk_mem_gen_generi...]
+Compiling architecture structure of entity xil_defaultlib.register_bank_blk_mem_gen_top [register_bank_blk_mem_gen_top_de...]
+Compiling architecture structure of entity xil_defaultlib.register_bank_blk_mem_gen_v8_4_4_synth [register_bank_blk_mem_gen_v8_4_4...]
+Compiling architecture structure of entity xil_defaultlib.register_bank_blk_mem_gen_v8_4_4 [register_bank_blk_mem_gen_v8_4_4...]
+Compiling architecture structure of entity xil_defaultlib.register_bank [register_bank_default]
+Compiling architecture arch_registry_bank of entity xil_defaultlib.registry_bank_top [\registry_bank_top(1,4)\]
+Compiling architecture behavioral of entity xil_defaultlib.ram_fsm [ram_fsm_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,ram_extensio...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,ram_extensio...]
+Compiling architecture structure of entity xil_defaultlib.ram_blk_mem_gen_prim_wrapper_init [ram_blk_mem_gen_prim_wrapper_ini...]
+Compiling architecture structure of entity xil_defaultlib.ram_blk_mem_gen_prim_width [ram_blk_mem_gen_prim_width_defau...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_wrapper_init__parameterized0\ [\ram_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_width__parameterized0\ [\ram_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_wrapper_init__parameterized1\ [\ram_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_width__parameterized1\ [\ram_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_wrapper_init__parameterized2\ [\ram_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_width__parameterized2\ [\ram_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_wrapper_init__parameterized3\ [\ram_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_width__parameterized3\ [\ram_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_wrapper_init__parameterized4\ [\ram_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_width__parameterized4\ [\ram_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_wrapper_init__parameterized5\ [\ram_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_width__parameterized5\ [\ram_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_wrapper_init__parameterized6\ [\ram_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\ram_blk_mem_gen_prim_width__parameterized6\ [\ram_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.ram_blk_mem_gen_generic_cstr [ram_blk_mem_gen_generic_cstr_def...]
+Compiling architecture structure of entity xil_defaultlib.ram_blk_mem_gen_top [ram_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.ram_blk_mem_gen_v8_4_4_synth [ram_blk_mem_gen_v8_4_4_synth_def...]
+Compiling architecture structure of entity xil_defaultlib.ram_blk_mem_gen_v8_4_4 [ram_blk_mem_gen_v8_4_4_default]
+Compiling architecture structure of entity xil_defaultlib.ram [ram_default]
+Compiling architecture arch_ram of entity xil_defaultlib.ram_top [\ram_top(1,4)\]
+Compiling architecture behavioral of entity xil_defaultlib.rom_fsm [rom_fsm_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000001000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010000000000000000...]
+Compiling architecture structure of entity xil_defaultlib.rom_bindec [rom_bindec_default]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.rom_blk_mem_gen_mux [rom_blk_mem_gen_mux_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,initp_00="00...]
+Compiling architecture structure of entity xil_defaultlib.rom_blk_mem_gen_prim_wrapper_init [rom_blk_mem_gen_prim_wrapper_ini...]
+Compiling architecture structure of entity xil_defaultlib.rom_blk_mem_gen_prim_width [rom_blk_mem_gen_prim_width_defau...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,rdaddr_colli...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized9\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized9\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized10\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized10\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized11\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized11\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized12\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized12\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized13\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized13\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized14\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized14\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,init_00="000...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized15\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized15\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized16\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized16\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized17\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized17\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized18\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized18\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized0\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized0\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized19\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized19\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized20\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized20\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized21\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized21\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized22\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized22\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized23\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized23\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized24\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized24\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized25\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized25\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized26\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized26\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized27\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized27\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized28\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized28\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized1\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized1\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized29\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized29\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized30\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized30\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,initp_00="00...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized31\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized31\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized32\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized32\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized33\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized33\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized34\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized34\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized35\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized35\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized36\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized36\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized37\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized37\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized38\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized38\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized2\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized2\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized39\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized39\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized40\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized40\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized41\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized41\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized42\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized42\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized43\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized43\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized44\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized44\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized45\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized45\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized46\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized46\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized47\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized47\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized48\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized48\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized3\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized3\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized49\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized49\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized50\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized50\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized51\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized51\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized4\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized4\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized5\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized5\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized6\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized6\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized7\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized7\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_wrapper_init__parameterized8\ [\rom_blk_mem_gen_prim_wrapper_in...]
+Compiling architecture structure of entity xil_defaultlib.\rom_blk_mem_gen_prim_width__parameterized8\ [\rom_blk_mem_gen_prim_width__par...]
+Compiling architecture structure of entity xil_defaultlib.rom_blk_mem_gen_generic_cstr [rom_blk_mem_gen_generic_cstr_def...]
+Compiling architecture structure of entity xil_defaultlib.rom_blk_mem_gen_top [rom_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.rom_blk_mem_gen_v8_4_4_synth [rom_blk_mem_gen_v8_4_4_synth_def...]
+Compiling architecture structure of entity xil_defaultlib.rom_blk_mem_gen_v8_4_4 [rom_blk_mem_gen_v8_4_4_default]
+Compiling architecture structure of entity xil_defaultlib.rom [rom_default]
+Compiling architecture arch_rom of entity xil_defaultlib.rom_top [\rom_top(1,4)\]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture arch_fmu of entity xil_defaultlib.FMU [fmu_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_fmu
+Built simulation snapshot tb_FMU_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/OUSL/5th -notrace
+couldn't read file "E:/OUSL/5th": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 11 14:10:48 2025...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:34 . Memory (MB): peak = 1706.105 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '35' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FMU_behav -key {Behavioral:sim_1:Functional:tb_FMU} -tclbatch {tb_FMU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_FMU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FMU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:44 . Memory (MB): peak = 1708.832 ; gain = 14.461
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_FMU' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/ram.mif'
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/data.coe'
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/program.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_FMU_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+"xelab -wto fd4e5ae50fec4ebdb77c07f87bc51b92 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_FMU_behav xil_defaultlib.tb_FMU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto fd4e5ae50fec4ebdb77c07f87bc51b92 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_FMU_behav xil_defaultlib.tb_FMU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1708.832 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1708.832 ; gain = 0.000
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1708.832 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_hw_manager
+close_hw_manager
+reset_run synth_1
+file mkdir E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1
+file mkdir E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1
+file mkdir E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1
+file mkdir E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new
+file mkdir E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new
+file mkdir E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new
+file mkdir E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new
+file mkdir E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1
+file mkdir {E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new}
+close [ open {E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new/FMU.xdc} w ]
+add_files -fileset constrs_1 {{E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new/FMU.xdc}}
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_FMU' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/ram.mif'
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/data.coe'
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim/program.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_FMU_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+"xelab -wto fd4e5ae50fec4ebdb77c07f87bc51b92 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_FMU_behav xil_defaultlib.tb_FMU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto fd4e5ae50fec4ebdb77c07f87bc51b92 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_FMU_behav xil_defaultlib.tb_FMU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1708.832 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FMU_behav -key {Behavioral:sim_1:Functional:tb_FMU} -tclbatch {tb_FMU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_FMU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FMU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1708.832 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FMU
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1718.820 ; gain = 8.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FMU' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:20]
+INFO: [Synth 8-3491] module 'instruction_register' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/instruction_register.vhd:5' bound to instance 'IR' of component 'instruction_register' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'instruction_register' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/instruction_register.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'instruction_register' (1#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/instruction_register.vhd:17]
+INFO: [Synth 8-3491] module 'demux' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/demux.vhd:4' bound to instance 'dmux' of component 'demux' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'demux' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/demux.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'demux' (2#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/demux.vhd:14]
+INFO: [Synth 8-3491] module 'DFlipFlop' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/DFlipFlop.vhd:4' bound to instance 'dff' of component 'dflipflop' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'DFlipFlop' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/DFlipFlop.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'DFlipFlop' (3#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/DFlipFlop.vhd:14]
+INFO: [Synth 8-3491] module 'inference_unit' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/inference_unit.vhd:5' bound to instance 'IU' of component 'inference_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'inference_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/inference_unit.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'inference_unit' (4#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/inference_unit.vhd:14]
+INFO: [Synth 8-3491] module 'reg_a_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:4' bound to instance 'a_register' of component 'reg_a_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'reg_a_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'reg_a_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_fms.vhd:4' bound to instance 'CU' of component 'reg_a_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'reg_a_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_fms.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'reg_a_fsm' (5#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_fms.vhd:15]
+INFO: [Synth 8-3491] module 'reg_a' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/reg_a_stub.vhdl:5' bound to instance 'reg_a_1' of component 'reg_a' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'reg_a' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/reg_a_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'reg_a_top' (6#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:17]
+INFO: [Synth 8-3491] module 'registry_bank_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:4' bound to instance 'registry_bank' of component 'registry_bank_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'registry_bank_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'registry_bank_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_fsm.vhd:4' bound to instance 'CU' of component 'registry_bank_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'registry_bank_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_fsm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'registry_bank_fsm' (7#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_fsm.vhd:15]
+INFO: [Synth 8-3491] module 'register_bank' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/register_bank_stub.vhdl:5' bound to instance 'register_bank_1' of component 'register_bank' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'register_bank' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/register_bank_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'registry_bank_top' (8#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:17]
+INFO: [Synth 8-3491] module 'ram_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:4' bound to instance 'data_memory' of component 'ram_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:289]
+INFO: [Synth 8-638] synthesizing module 'ram_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'ram_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_fsm.vhd:4' bound to instance 'CU' of component 'ram_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'ram_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_fsm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ram_fsm' (9#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_fsm.vhd:15]
+INFO: [Synth 8-3491] module 'ram' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/ram_stub.vhdl:5' bound to instance 'ram_1' of component 'ram' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'ram' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/ram_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'ram_top' (10#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:17]
+INFO: [Synth 8-3491] module 'rom_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:4' bound to instance 'program_memory' of component 'rom_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'rom_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'rom_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_fsm.vhd:4' bound to instance 'CU' of component 'rom_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'rom_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_fsm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'rom_fsm' (11#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_fsm.vhd:15]
+INFO: [Synth 8-3491] module 'rom' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/rom_stub.vhdl:5' bound to instance 'rom_1' of component 'rom' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'rom' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/rom_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'rom_top' (12#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:17]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:6' bound to instance 'CU' of component 'control_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:317]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:57]
+WARNING: [Synth 8-614] signal 'ramdata' is read in the process but is not in the sensitivity list [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:97]
+WARNING: [Synth 8-614] signal 'pulse_edge' is read in the process but is not in the sensitivity list [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:97]
+WARNING: [Synth 8-3848] Net rom_clr in module/entity control_unit does not have driver. [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (13#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:57]
+WARNING: [Synth 8-3848] Net ro_op in module/entity FMU does not have driver. [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'FMU' (14#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:20]
+WARNING: [Synth 8-3331] design control_unit has unconnected port rom_clr
+WARNING: [Synth 8-3331] design control_unit has unconnected port ramdata[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port ramdata[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port ramdata[5]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[31]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[30]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[29]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[28]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1718.820 ; gain = 8.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1718.820 ; gain = 8.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1718.820 ; gain = 8.996
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/reg_a/reg_a.dcp' for cell 'a_register/reg_a_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/register_bank/register_bank.dcp' for cell 'registry_bank/register_bank_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/ram/ram.dcp' for cell 'data_memory/ram_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/rom/rom.dcp' for cell 'program_memory/rom_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1718.820 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 157 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new/FMU.xdc]
+Finished Parsing XDC File [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new/FMU.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1843.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1843.246 ; gain = 133.422
+60 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1843.246 ; gain = 133.422
+close_design
+launch_runs synth_1 -jobs 4
+[Tue Nov 11 15:02:33 2025] Launched synth_1...
+Run output will be captured here: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Nov 11 15:04:15 2025] Launched impl_1...
+Run output will be captured here: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FMU
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1853.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FMU' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:20]
+INFO: [Synth 8-3491] module 'instruction_register' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/instruction_register.vhd:5' bound to instance 'IR' of component 'instruction_register' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'instruction_register' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/instruction_register.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'instruction_register' (1#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/instruction_register.vhd:17]
+INFO: [Synth 8-3491] module 'demux' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/demux.vhd:4' bound to instance 'dmux' of component 'demux' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'demux' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/demux.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'demux' (2#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/demux.vhd:14]
+INFO: [Synth 8-3491] module 'DFlipFlop' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/DFlipFlop.vhd:4' bound to instance 'dff' of component 'dflipflop' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'DFlipFlop' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/DFlipFlop.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'DFlipFlop' (3#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/DFlipFlop.vhd:14]
+INFO: [Synth 8-3491] module 'inference_unit' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/inference_unit.vhd:5' bound to instance 'IU' of component 'inference_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'inference_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/inference_unit.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'inference_unit' (4#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/inference_unit.vhd:14]
+INFO: [Synth 8-3491] module 'reg_a_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:4' bound to instance 'a_register' of component 'reg_a_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'reg_a_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'reg_a_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_fms.vhd:4' bound to instance 'CU' of component 'reg_a_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'reg_a_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_fms.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'reg_a_fsm' (5#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_fms.vhd:15]
+INFO: [Synth 8-3491] module 'reg_a' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/reg_a_stub.vhdl:5' bound to instance 'reg_a_1' of component 'reg_a' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'reg_a' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/reg_a_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'reg_a_top' (6#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/reg_a_top.vhd:17]
+INFO: [Synth 8-3491] module 'registry_bank_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:4' bound to instance 'registry_bank' of component 'registry_bank_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'registry_bank_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'registry_bank_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_fsm.vhd:4' bound to instance 'CU' of component 'registry_bank_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'registry_bank_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_fsm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'registry_bank_fsm' (7#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_fsm.vhd:15]
+INFO: [Synth 8-3491] module 'register_bank' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/register_bank_stub.vhdl:5' bound to instance 'register_bank_1' of component 'register_bank' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'register_bank' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/register_bank_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'registry_bank_top' (8#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/registry_bank_top.vhd:17]
+INFO: [Synth 8-3491] module 'ram_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:4' bound to instance 'data_memory' of component 'ram_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:289]
+INFO: [Synth 8-638] synthesizing module 'ram_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'ram_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_fsm.vhd:4' bound to instance 'CU' of component 'ram_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'ram_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_fsm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ram_fsm' (9#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_fsm.vhd:15]
+INFO: [Synth 8-3491] module 'ram' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/ram_stub.vhdl:5' bound to instance 'ram_1' of component 'ram' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'ram' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/ram_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'ram_top' (10#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/ram_top.vhd:17]
+INFO: [Synth 8-3491] module 'rom_top' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:4' bound to instance 'program_memory' of component 'rom_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'rom_top' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:17]
+	Parameter C_SIMULATION bound to: TRUE - type: string 
+INFO: [Synth 8-3491] module 'rom_fsm' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_fsm.vhd:4' bound to instance 'CU' of component 'rom_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'rom_fsm' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_fsm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'rom_fsm' (11#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_fsm.vhd:15]
+INFO: [Synth 8-3491] module 'rom' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/rom_stub.vhdl:5' bound to instance 'rom_1' of component 'rom' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'rom' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/.Xil/Vivado-8004-DESKTOP-C1F6LE5/realtime/rom_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'rom_top' (12#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/rom_top.vhd:17]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:6' bound to instance 'CU' of component 'control_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:317]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:57]
+WARNING: [Synth 8-614] signal 'ramdata' is read in the process but is not in the sensitivity list [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:97]
+WARNING: [Synth 8-614] signal 'pulse_edge' is read in the process but is not in the sensitivity list [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:97]
+WARNING: [Synth 8-3848] Net rom_clr in module/entity control_unit does not have driver. [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (13#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/control_unit.vhd:57]
+WARNING: [Synth 8-3848] Net ro_op in module/entity FMU does not have driver. [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'FMU' (14#1) [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/new/FMU.vhd:20]
+WARNING: [Synth 8-3331] design control_unit has unconnected port rom_clr
+WARNING: [Synth 8-3331] design control_unit has unconnected port ramdata[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port ramdata[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port ramdata[5]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[31]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[30]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[29]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[28]
+WARNING: [Synth 8-3331] design instruction_register has unconnected port din[27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1853.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1853.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1853.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/reg_a/reg_a.dcp' for cell 'a_register/reg_a_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/register_bank/register_bank.dcp' for cell 'registry_bank/register_bank_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/ram/ram.dcp' for cell 'data_memory/ram_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/rom/rom.dcp' for cell 'program_memory/rom_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1853.266 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 157 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new/FMU.xdc]
+Finished Parsing XDC File [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new/FMU.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1894.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1894.848 ; gain = 41.582
+60 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1894.848 ; gain = 41.582
+set_msg_config -suppress -id {DRC MDRV-1} 
+set_msg_config -suppress -id {Vivado_Tcl 4-78} 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Nov 11 15:13:12 2025] Launched synth_1...
+Run output will be captured here: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Nov 11 15:18:47 2025] Launched synth_1...
+Run output will be captured here: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Nov 11 15:20:07 2025] Launched impl_1...
+Run output will be captured here: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/reg_a/reg_a.dcp' for cell 'a_register/reg_a_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/ram/ram.dcp' for cell 'data_memory/ram_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/rom/rom.dcp' for cell 'program_memory/rom_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/register_bank/register_bank.dcp' for cell 'registry_bank/register_bank_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1923.613 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new/FMU.xdc]
+Finished Parsing XDC File [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new/FMU.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1978.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2030.930 ; gain = 112.570
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Nov 11 15:36:37 2025] Launched synth_1...
+Run output will be captured here: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.runs/synth_1/runme.log
+close_design
+launch_runs impl_1 -jobs 4
+[Tue Nov 11 15:37:57 2025] Launched impl_1...
+Run output will be captured here: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/reg_a/reg_a.dcp' for cell 'a_register/reg_a_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/ram/ram.dcp' for cell 'data_memory/ram_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/rom/rom.dcp' for cell 'program_memory/rom_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/sources_1/ip/register_bank/register_bank.dcp' for cell 'registry_bank/register_bank_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2767.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 202 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new/FMU.xdc]
+Finished Parsing XDC File [E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.srcs/constrs_1/new/FMU.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2767.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2767.980 ; gain = 0.000
+close_design
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'close_design' was cancelled
+close_design
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'close_design' was cancelled
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 3171.578 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 186 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.389 . Memory (MB): peak = 3276.535 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.390 . Memory (MB): peak = 3276.535 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3276.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 3276.535 ; gain = 104.957
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 11 19:02:08 2025...

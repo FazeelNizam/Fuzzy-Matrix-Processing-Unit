@@ -1,0 +1,7 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto fd4e5ae50fec4ebdb77c07f87bc51b92 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_inference_unit_behav xil_defaultlib.tb_inference_unit -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3353] formal port 'ena' has no actual or default value [E:/OUSL/5th Year/EEX7436/EEX7436 Design Project/DPP/DPP.srcs/sources_1/new/inference_unit.vhd:10]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_inference_unit in library work failed.

@@ -1,0 +1,152 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Dec 12 14:18:08 2025
+| Host         : DESKTOP-C1F6LE5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file FMU_control_sets_placed.rpt
+| Design       : FMU
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    74 |
+|    Minimum number of control sets                        |    74 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   379 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    74 |
+| >= 0 to < 4        |    35 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |    20 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             227 |          139 |
+| No           | No                    | Yes                    |              18 |            8 |
+| No           | Yes                   | No                     |              48 |           15 |
+| Yes          | No                    | No                     |               8 |            3 |
+| Yes          | No                    | Yes                    |              24 |           10 |
+| Yes          | Yes                   | No                     |             120 |           38 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+|                   Clock Signal                  |                        Enable Signal                       |                      Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++-------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+|  program_memory/CU/done_reg_i_2_n_1             |                                                            |                                                            |                1 |              1 |
+|  CU/prog_done_reg_i_2_n_1                       |                                                            |                                                            |                1 |              1 |
+|  CU/ir_enb_reg_i_2_n_1                          |                                                            |                                                            |                1 |              1 |
+|  CU/mux_en_reg_i_2_n_1                          |                                                            |                                                            |                1 |              1 |
+|  CU/ir_sel_reg_i_1_n_1                          |                                                            |                                                            |                1 |              1 |
+|  CU/inf_ena_reg_i_2_n_1                         |                                                            |                                                            |                1 |              1 |
+|  CU/setdone_reg_i_1_n_1                         |                                                            |                                                            |                1 |              1 |
+|  CU/setled_reg_i_2_n_1                          |                                                            |                                                            |                1 |              1 |
+|  CU/saveprog_reg_i_2_n_1                        |                                                            |                                                            |                1 |              1 |
+|  CU/a_clr_reg_i_1_n_1                           |                                                            |                                                            |                1 |              1 |
+|  CU/a_ena_inferred__0/a_ena_reg_i_2_n_1         |                                                            |                                                            |                1 |              1 |
+|  CU/savedins_reg_i_2_n_1                        |                                                            |                                                            |                1 |              1 |
+|  CU/rom_ena_reg_i_1_n_1                         |                                                            |                                                            |                1 |              1 |
+|  CU/flipflop_enb_reg_i_2_n_1                    |                                                            |                                                            |                1 |              1 |
+|  CU/err_reg_i_1_n_1                             |                                                            |                                                            |                1 |              1 |
+|  CU/a_wea_reg_i_2_n_1                           |                                                            |                                                            |                1 |              1 |
+|  CU/reg_wea_reg_i_1_n_1                         |                                                            |                                                            |                1 |              1 |
+|  CU/divad_reg_i_2_n_1                           |                                                            |                                                            |                1 |              1 |
+|  data_memory/clk_unit.clock_divider/CLK         |                                                            |                                                            |                1 |              1 |
+|  CU/test_reg_i_2_n_1                            |                                                            |                                                            |                1 |              1 |
+|  CU/reg_clr_reg_i_2_n_1                         |                                                            |                                                            |                1 |              1 |
+|  CU/reg_ena_reg_i_2_n_1                         |                                                            |                                                            |                1 |              1 |
+|  CU/ram_clr_reg_i_1_n_1                         |                                                            |                                                            |                1 |              1 |
+|  CU/readram_reg_i_2_n_1                         |                                                            |                                                            |                1 |              1 |
+|  CU/ram_wea_reg_i_2_n_1                         |                                                            |                                                            |                1 |              1 |
+|  CU/ram_ena_reg_i_2_n_1                         |                                                            |                                                            |                1 |              1 |
+|  CU/runprog_reg_i_2_n_1                         |                                                            |                                                            |                1 |              1 |
+|  program_memory/clk_unit.clock_divider/CLK_BUFG |                                                            | CU/ext_rst                                                 |                1 |              2 |
+|  a_register/clk_unit.clock_divider/CLK          |                                                            | CU/ext_rst                                                 |                1 |              3 |
+|  a_register/CU/done_reg_i_1_n_1                 |                                                            |                                                            |                1 |              3 |
+|  registry_bank/clk_unit.clock_divider/CLK       |                                                            | CU/ext_rst                                                 |                1 |              3 |
+|  registry_bank/CU/done_reg_i_1__0_n_1           |                                                            |                                                            |                2 |              3 |
+|  CU/ir_op_reg[2]_i_2_n_1                        |                                                            |                                                            |                2 |              3 |
+|  data_memory/CU/done_reg_i_1__1_n_1             |                                                            |                                                            |                1 |              3 |
+|  data_memory/clk_unit.clock_divider/CLK         |                                                            | CU/ext_rst                                                 |                1 |              3 |
+|  CU/basead_reg[3]_i_2_n_1                       |                                                            |                                                            |                2 |              4 |
+|  ext_clk_IBUF_BUFG                              |                                                            |                                                            |                4 |              4 |
+|  CU/regad_reg[3]_i_2_n_1                        |                                                            |                                                            |                2 |              4 |
+|  CU/opcode_reg[3]_i_2_n_1                       |                                                            |                                                            |                3 |              4 |
+|  CU/reg_ad_reg[3]_i_2_n_1                       |                                                            |                                                            |                2 |              4 |
+|  CU/col_reg[4]_i_1_n_1                          |                                                            |                                                            |                2 |              5 |
+|  CU/row_reg[4]_i_2_n_1                          |                                                            |                                                            |                2 |              5 |
+|  ext_clk_IBUF_BUFG                              |                                                            | CU/ext_rst                                                 |                4 |              7 |
+|  CU/opcode_reg[2]_0[0]                          |                                                            | CU/AR[0]                                                   |                3 |              8 |
+|  ext_clk_IBUF_BUFG                              | CU/E[0]                                                    | CU/ext_rst                                                 |                2 |              8 |
+|  CU/RAM_H_reg[7]_i_2_n_1                        |                                                            |                                                            |                7 |              8 |
+|  program_memory/clk_unit.clock_divider/CLK_BUFG | CU/state_reg[1]_0                                          |                                                            |                3 |              8 |
+|  ext_clk_IBUF_BUFG                              | data_memory/clk_unit.clock_divider/count3[9]_i_2__1_n_1    | data_memory/clk_unit.clock_divider/count3[9]_i_1__1_n_1    |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              | program_memory/clk_unit.clock_divider/count2[9]_i_2__2_n_1 | program_memory/clk_unit.clock_divider/count2[9]_i_1__2_n_1 |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              | program_memory/clk_unit.clock_divider/count3[9]_i_2__2_n_1 | program_memory/clk_unit.clock_divider/count3[9]_i_1__2_n_1 |                3 |             10 |
+|  CU/i_reg[9]_i_2_n_1                            |                                                            |                                                            |                5 |             10 |
+|  ext_clk_IBUF_BUFG                              | program_memory/clk_unit.clock_divider/count1[9]_i_2__2_n_1 | program_memory/clk_unit.clock_divider/count1[9]_i_1__2_n_1 |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              | registry_bank/clk_unit.clock_divider/count1[9]_i_2__0_n_1  | registry_bank/clk_unit.clock_divider/count1[9]_i_1__0_n_1  |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              | registry_bank/clk_unit.clock_divider/count3[9]_i_2__0_n_1  | registry_bank/clk_unit.clock_divider/count3[9]_i_1__0_n_1  |                4 |             10 |
+|  ext_clk_IBUF_BUFG                              | registry_bank/clk_unit.clock_divider/count2[9]_i_2__0_n_1  | registry_bank/clk_unit.clock_divider/count2[9]_i_1__0_n_1  |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              | a_register/clk_unit.clock_divider/count1[9]_i_2_n_1        | a_register/clk_unit.clock_divider/count1[9]_i_1_n_1        |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              | a_register/clk_unit.clock_divider/count3[9]_i_2_n_1        | a_register/clk_unit.clock_divider/count3[9]_i_1_n_1        |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              | a_register/clk_unit.clock_divider/count2[9]_i_2_n_1        | a_register/clk_unit.clock_divider/count2[9]_i_1_n_1        |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              |                                                            | data_memory/clk_unit.clock_divider/count0[9]_i_1__1_n_1    |                4 |             10 |
+|  ext_clk_IBUF_BUFG                              |                                                            | program_memory/clk_unit.clock_divider/count0[9]_i_1__2_n_1 |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              | data_memory/clk_unit.clock_divider/count2[9]_i_2__1_n_1    | data_memory/clk_unit.clock_divider/count2[9]_i_1__1_n_1    |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              |                                                            | registry_bank/clk_unit.clock_divider/count0[9]_i_1__0_n_1  |                2 |             10 |
+|  ext_clk_IBUF_BUFG                              |                                                            | a_register/clk_unit.clock_divider/count0[9]_i_1_n_1        |                3 |             10 |
+|  ext_clk_IBUF_BUFG                              | data_memory/clk_unit.clock_divider/count1[9]_i_2__1_n_1    | data_memory/clk_unit.clock_divider/count1[9]_i_1__1_n_1    |                4 |             10 |
+|  CU/prog_H__0                                   |                                                            |                                                            |                7 |             11 |
+|  CU/a_ad_reg[10]_i_2_n_1                        |                                                            |                                                            |                3 |             11 |
+|  CU/Aad_reg[10]_i_2_n_1                         |                                                            |                                                            |                7 |             11 |
+|  CU/ram_ad_reg[15]_i_2_n_1                      |                                                            |                                                            |                8 |             16 |
+|  CU/rom_ad_reg[15]_i_2_n_1                      |                                                            |                                                            |               10 |             16 |
+|  ext_clk_IBUF_BUFG                              | CU/next_state                                              | CU/ext_rst                                                 |                8 |             16 |
+|  CU/RAMad_reg[15]_i_2_n_1                       |                                                            |                                                            |                8 |             16 |
+|  CU/pc_reg[15]_i_2_n_1                          |                                                            |                                                            |                7 |             16 |
+|  CU/prog_L__0                                   |                                                            |                                                            |               11 |             16 |
+|  n_0_669_BUFG                                   |                                                            |                                                            |               16 |             27 |
++-------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+
+

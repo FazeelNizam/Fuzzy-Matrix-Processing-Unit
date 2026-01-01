@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../DPP.srcs/sources_1/ip/ram/ram_sim_netlist.vhdl" \
+
+nosort

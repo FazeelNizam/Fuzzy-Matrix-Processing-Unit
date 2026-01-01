@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Nov  3 08:56:36 2025
+# Process ID: 12964
+# Current directory: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.runs/ram_synth_1
+# Command line: vivado.exe -log ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram.tcl
+# Log file: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.runs/ram_synth_1/ram.vds
+# Journal file: E:/OUSL/5th Year/EEX7436/EEX7436 DPP 2/DPP/DPP/DPP.runs/ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ram.tcl -notrace

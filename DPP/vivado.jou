@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Dec 12 15:15:54 2025
+# Process ID: 10024
+# Current directory: E:/OUSL/5th Year/EEX7436/EEX7436 Design Project/DPP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3356 E:\OUSL\5th Year\EEX7436\EEX7436 Design Project\DPP\DPP.xpr
+# Log file: E:/OUSL/5th Year/EEX7436/EEX7436 Design Project/DPP/vivado.log
+# Journal file: E:/OUSL/5th Year/EEX7436/EEX7436 Design Project/DPP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/OUSL/5th Year/EEX7436/EEX7436 Design Project/DPP/DPP.xpr}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_control_unit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_control_unit.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source tb_control_unit.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source tb_control_unit.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top control_unit [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_control_unit.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FMU [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_inference_unit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_control_unit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1

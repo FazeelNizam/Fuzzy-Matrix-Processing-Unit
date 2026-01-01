@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L secureip -L xpm --snapshot reg_a xil_defaultlib.reg_a -log elaborate.log
